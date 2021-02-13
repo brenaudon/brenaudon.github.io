@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+	max-width: 100%;
+    overflow-x: hidden;
+	margin: 0 auto;
+	background: url('../img/bg.JPG');
+	background-attachment: fixed;
+	background-size: cover;
+
+  	margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*Espace vide haut de site*/
+
+div#vide{
+	height: 100vh;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+
+}
+div#vide h1{
+	padding-top: 270px;
+}
+div#vide h1, h2{
+	font-family: 'Abril FatFace', fantasy;
+	font-variant: small-caps;
+}
+
+.scroll-down {
+	font-size: 30px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5vh;
+    left: 85%;
+}
+div#vide.sticky {
+  height: 118vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*Header*/
+
+header{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	background: url('../img/couverture.jpg');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+
+header img{
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 50px;
+	margin-bottom: 25px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+/*Sticky menu*/
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+/*Menu navigation*/
+
+nav.menu{
+	/*background-color: red;*/
+}
+nav.menu ul li.btn{
+	list-style-type: none;
+	display: inline-block;
+	justify-content: space-between;
+}
+
+nav.menu ul li.btn a{
+	color: #fff;
+	text-decoration: none;
+	padding-right: 60px;
+	font-size: 25px;
+}
+
+nav.menu ul li.btn:hover a{
+	color: #C7CECE;
+	text-decoration: underline;
+	transition: 0.3s all;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*Menu scroll*/
+
+nav.scroll{
+    height: 100vh;
+    width: 170px;
+    z-index: 10;
+    left: 85%;
+    background-color: #303030;
+    height: 270px;
+    border-radius: 25px;
+	top: 125vh;
+	position: absolute;
+ 	font-size: 22px;
+   	font-weight: 300;
+   	font-family: 'Blippo', fantasy;
+	font-variant: normal;
+	 
+}
+
+nav.scroll ul li.scroll_btn{
+ 	list-style-type: none;
+ }
+
+nav.scroll ul li.scroll_btn a.links {
+   display: flex;
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+   position: relative;
+   margin-top: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+nav.scroll ul li.scroll_btn a.links:hover {
+   color: #DBD5A9;
+   transition: 0.5s all;
+   font-weight: bold;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 20%;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
+div.gen1,div.gen2{
+	width: 100%;
+	padding: 10px;
+	z-index: 1;
+}
+
+div.gen1 {
+	background-color: #fff;
+
+}
+
+div.gen2 a{
+	color: #37B0E5;
+	text-decoration: none;
+}
+
+div.gen2 {
+	background-color: #1E1F1F;
+	color: white;
+}
+
+div.left_panel, div.right_panel{
+	display: inline-block;
+	margin: auto;
+	width: 48%;
+	padding: 10px;
+	vertical-align: top;
+}
+
+div.gen1 div.right_panel p#timer{
+	font-weight: bold;
+}
+
+div.content div p,h1,iframe{
+	margin: 50px;
+}
+
+div.content div#vid{
+	background-color: green;
+}
+
+div#presentation{
+	text-align: center;
+}
+
+div.pres, div.contact{
+	display: inline-block;
+	margin: auto;
+	padding: 10px;
+	vertical-align: top;
+}
+
+div.pres{
+	width: 70%;
+}
+
+div.pres img{
+	width: 500px;
+	margin-bottom: 100px;
+}
+
+div.contact{
+	width: 25%;
+}
+
+
+footer{
+	background-color: #897874;
+	color: #fff;
+	padding: 50px;
+	width: 100%;
+
+}
+
+
+

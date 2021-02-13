@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baptiste RENAUDON</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+<body>
+
+	<div id="vide">
+		<h1 class="name">Baptiste Renaudon</h1>
+		<h2 class="poste"> ENSSAT | INFO2 </h2>
+		<a class="scroll-down" href="#menu_content">Scroll <i class="fas fa-angle-down"></i></a>
+	</div>
+
+	<!-- Haut de page -->
+	<header class="header" id="myHeader">
+		<img src="img/poule.png">
+		<!-- Menu navigation -->
+		<nav class="menu" id="menu_content">
+			<ul>
+				<li class="btn">
+					<a href="index.html#menu_content">
+						Accueil
+					</a> 
+				</li>
+				<li class="btn">
+					<a href="devWeb.html#menu_content">
+						Développement Web
+					</a>
+				</li>
+				<li class="btn">
+					<a href="projets.html#menu_content">
+						Projets
+					</a>
+				</li>
+				<li class="btn">
+					<a href="cv.html#menu_content">
+						Qui suis-je?
+					</a>	
+				</li>
+			</ul>
+		</nav>	
+	</header>
+
+	<!-- Menu scroll -->
+	<nav class="scroll" id="myScrollMenu">
+		<ul>
+			<li class="scroll_btn">
+				<a class="links" href="#timer_content">
+					Timer
+				</a>
+			</li>
+			<li class="scroll_btn">
+				<a class="links" href="#carres_content">
+					Carrés
+				</a>
+			</li>
+			<li class="scroll_btn">
+				<a class="links" href="#XHR_content">
+					XHR
+				</a>	
+			</li>
+			<li class="scroll_btn">
+				<a class="links" href="#worker_content">
+					Worker
+				</a>	
+			</li>
+		</ul>
+	</nav> 
+
+	<script type="text/javascript" src="js/menu.js"></script>
+
+
+	<!-- Contenu -->
+
+	<div class="content">
+
+		<div class="gen1" id="timer_content">
+			<div class="left_panel">
+				<h3>Callbacks : Introducing SetInterval and ClearInterval</h3>
+				<p>
+					Le but de cet exercice de TP était de présenter un comteur initialisé à 10 secondes et qui compte à rebours, à raison d'une unité par seconde. 
+					J'ai bien fait attention à ce que le compteur s'arrête à 0. J'en ai profité pour rajouter un message de fin de compte à rebours.
+					Ce TP nous a permis de nous familiariser avec les fonctions <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval" target="_BLANK">setInterval</a> et <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval" target="_BLANK">clearInterval</a>.
+				</p>
+			</div>
+			<div class="right_panel">
+				<p>Timer:</p>
+				<p id="timer"></p>
+				<script type="text/javascript" src="js/timer.js"></script>
+			</div>	
+		</div>
+
+
+
+		<div class="gen2" id="carres_content">
+			<div class="left_panel">
+				<canvas id="canvas" width="600" height="600" style='background-color: #EEE;'></canvas>
+				<script type="text/javascript" src="js/carre.js"></script>
+			</div>
+			<div class="right_panel">
+				<h3>Let's move : Setinterval & Canevas</h3>
+				<p>
+					Cet exercice suivant de TP nous introduisait les canvas et nous faisait mettre en pratique l'utilisation d'un timer via la fonction <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval" target="_BLANK">setInterval</a>. Je me suis un peu éloigné du sujet initial en m'abusant à rajouter des carrés tout en leur donnant des sens de parcours différents. Aillant d'abord codé ça "en dur", j'ai ensuite repris mon code pour adopter une organisation "objets". Ainsi, malgrès le fait que je me sois éloigné du sujet initial, j'ai tout de même acquis ce qui était attendu de nous en fin de TP. 
+				</p>
+			</div>
+		</div>
+
+
+
+		<div class="gen1" id="XHR_content">
+			<div class="left_panel">
+				<h3>The "A" in AJAX stands for "Asynchronous"</h3>
+				<p>
+					Le but de cet exercice était d'apprendre à envoyer des requêtes à une serveur et recevoir ses réponses. Pour ce faire, on a utilisé une vieille méthode qui est l'objet <a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Premiers_pas" target="_BLANK">XMLHttpRequest</a> (XHR). On envoyait un entier à un serveur et celui-ci nous renvoyait un entier aléatoire entre 0 et l'entier reçu. Il fallait utiliser ce procédé afin d'afficher un cercle en des coordonnées aléatoirement décidées et ce toutes les secondes. Nous devions ensuite utiliser l'API <a href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API" target="_BLANK">Fetch</a> mais je n'ai pas eu le temps de terminer.
+				</p>
+			</div>
+			<div class="right_panel">
+				<canvas id="MyCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+				<script type="text/javascript" src="js/XHR.js"></script>
+			</div>
+		</div>
+
+
+
+		<div class="gen2" id="worker_content">
+			<div class="left_panel">
+				<canvas id="MonCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+				<div>
+		          <label for="num">Nombre de points : </label>    
+		          <input type="text" id="num" value="0">
+		        </div>
+				<script type="text/javascript" src="js/random_points.js"></script>
+			</div>
+			<div class="right_panel">
+				<h3>Web Workers</h3>
+				<p>
+					Le but de ce TP était d'utiliser l'<a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API" target="_BLANK">API Web Workers</a> afin de générer des coordonnées aléatoires à des intervalles de temps aléatoires et d'afficher un point à ces coordonnées ayant une couleur propre à chaque <a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API" target="_BLANK">Web Worker</a>. Devant afficher plusieurs points et donc utiliser plusieurs <a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API" target="_BLANK">Web Worker</a>, nous avons dû adopter les méthode de la programmation orientée objet en créant une classe contenant principalement un <a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API" target="_BLANK">Web Worker</a> et la couleur qui lui est associée.
+				</p>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Pied de page -->
+	<footer>
+		<p>
+			Copyright &copy; Baptiste Renaudon - 2021 - All Rights Reserved
+		</p>
+	</footer>
+</body>
+</html>
