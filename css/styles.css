@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-}
+ }
 
 
 body{
@@ -232,12 +232,11 @@ nav.scroll:hover .hide2{
 
 /*---------------------------------------------------------------------------------------------------------*/
 
-
-
 div.gen1,div.gen2{
 	width: 100%;
 	padding: 10px;
 	z-index: 1;
+	scroll-margin-top: 150px;
 }
 
 div.gen1 {
