@@ -40,13 +40,25 @@ div#vide{
 	font-size: 50px;
 
 }
+
 div#vide h1{
 	padding-top: 270px;
+/*	border-bottom: 4px solid #fff;*/
 }
+
+div#vide hr{
+  margin-left: 30vw;
+  margin-right: 30vw;
+  border-color: #fff; 
+  border: 2px solid #fff; 
+}
+
 div#vide h1, h2{
-	font-family: 'Abril FatFace', fantasy;
-	font-variant: small-caps;
+	font-family: 'Open Sans', sans-serif !important;
 }
+
+div#vide h1{ font-weight: 700;}
+div#vide h2 { font-weight: 350;}
 
 .scroll-down {
 	font-size: 30px;
@@ -57,8 +69,9 @@ div#vide h1, h2{
     left: 85%;
 }
 div#vide.sticky {
-  height: 118vh;
+  height: 116vh;
 }
+
 
 /*---------------------------------------------------------------------------------------------------------*/
 
@@ -92,18 +105,9 @@ header.sticky {
   width: 100%
 }
 
-.sticky + .content {
-  padding-top: 102px;
-}
-
-
-
 
 /*Menu navigation*/
 
-nav.menu{
-	/*background-color: red;*/
-}
 nav.menu ul li.btn{
 	list-style-type: none;
 	display: inline-block;
@@ -129,12 +133,10 @@ nav.menu ul li.btn:hover a{
 /*Menu scroll*/
 
 nav.scroll{
-    height: 100vh;
     width: 170px;
     z-index: 10;
     left: 85%;
     background-color: #303030;
-    height: 270px;
     border-radius: 25px;
 	top: 125vh;
 	position: absolute;
@@ -142,11 +144,19 @@ nav.scroll{
    	font-weight: 300;
    	font-family: 'Blippo', fantasy;
 	font-variant: normal;
-	 
+	height: 70px;
+
 }
+
 
 nav.scroll ul li.scroll_btn{
  	list-style-type: none;
+ }
+
+ nav.scroll ul li.fleche{
+ 	list-style-type: none;
+ 	cursor: pointer;
+    padding-left: 38px;
  }
 
 nav.scroll ul li.scroll_btn a.links {
@@ -158,6 +168,7 @@ nav.scroll ul li.scroll_btn a.links {
    margin-top: 10px;
    overflow: hidden;
    cursor: pointer;
+   justify-content: center;
 }
 
 nav.scroll ul li.scroll_btn a.links:hover {
@@ -170,6 +181,52 @@ nav.sticky {
   position: fixed;
   top: 20%;
 }
+
+.hide{
+	display: none;
+	width: 170px;
+    z-index: 10;
+	left: 0%;
+	position: absolute;
+    background-color: #303030;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ 	font-size: 22px;
+   	font-weight: 300;
+   	font-family: 'Blippo', fantasy;
+	font-variant: normal;
+	text-align: center;
+	height: 355px;
+}
+
+nav.scroll:hover .hide{
+	display: block;
+
+}
+
+.hide2{
+	display: none;
+	width: 170px;
+    z-index: 10;
+	left: 0%;
+	position: absolute;
+    background-color: #303030;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ 	font-size: 22px;
+   	font-weight: 300;
+   	font-family: 'Blippo', fantasy;
+	font-variant: normal;
+	text-align: center;
+	height: 240px;
+}
+
+nav.scroll:hover .hide2{
+	display: block;
+
+}
+
+
 
 
 
@@ -240,7 +297,15 @@ div.pres img{
 
 div.contact{
 	width: 25%;
+	border-left: 2px solid black;
+	height: 600px;
 }
+
+div.left_panel img, 
+div.right_panel img{
+	width: 45vw;
+}
+
 
 
 footer{

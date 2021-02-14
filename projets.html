@@ -5,11 +5,13 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
 	<div id="vide">
 		<h1 class="name">Baptiste Renaudon</h1>
+		<hr>
 		<h2 class="poste"> ENSSAT | INFO2 </h2>
 		<a class="scroll-down" href="#menu_content">Scroll <i class="fas fa-angle-down"></i></a>
 	</div>
@@ -45,52 +47,124 @@
 	</header>
 
 	<!-- Menu scroll -->
-	<!-- <nav class="scroll" id="myScrollMenu">
+	<nav class="scroll" id="myScrollMenuProjets">
 		<ul>
-			<li class="scroll_btn">
-				<a class="links" href="#timer_content">
-					Timer
-				</a>
+			<li class="fleche">
+				 <i class="fas fa-angle-down" style="color: white"></i>
 			</li>
-			<li class="scroll_btn">
-				<a class="links" href="#carres_content">
-					Carrés
-				</a>
-			</li>
-			<li class="scroll_btn">
-				<a class="links" href="#XHR_content">
-					XHR
-				</a>	
-			</li>
-			<li class="scroll_btn">
-				<a class="links" href="#worker_content">
-					Worker
-				</a>	
-			</li>
+			<div id="p1" class="hide">
+				<li class="scroll_btn">
+					<a class="links" href="#JEE">
+						JEE
+					</a>
+				</li>
+				<li class="scroll_btn">
+					<a class="links" href="#GL">
+						GL
+					</a>
+				</li>
+				<li class="scroll_btn">
+					<a class="links" href="#java">
+						Java
+					</a>	
+				</li>
+				<li class="scroll_btn">
+					<a class="links" href="#microC">
+						µC
+					</a>	
+				</li>
+				<li class="scroll_btn">
+					<a class="links" href="#pacman">
+						Pacman
+					</a>	
+				</li>
+				<li class="scroll_btn">
+					<a class="links" href="#SH">
+						SH
+					</a>	
+				</li>
+			</div>
 		</ul>
-	</nav>  -->
+	</nav> 
 
 	<script type="text/javascript" src="js/menu.js"></script>
 
-
 	<!-- Contenu -->
 
-	<div class="content">
+	<div class="content" id="content_panel">
 
-		<div class="gen1" id="GL">
+		<div class="gen1" id="JEE">
 			<div class="left_panel">
-				<h3>Projet GL</h3>
+				<h3>Site web streaming de musique - HTML/CSS/JEE - Fevrier/Mars 2021</h3>
 				<p>
-					Description du projet GL
+					Projet en cours
 				</p>
 			</div>
 			<div class="right_panel">
-				<iframe width="560" height="315" src="https://files.catbox.moe/heh7y9.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<img src="img/en_construction.jpg">
 			</div>	
 		</div>
 
-	</div>
+		<div class="gen2" id="GL">
+			<div class="left_panel">
+				<iframe width="800" height="450" src="https://files.catbox.moe/heh7y9.mp4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="right_panel">
+				<h3>OLD'SAT - Escape Game - Java/JSON/JavaFX/CSS - Novembre 2020 à Janvier 2021</h3>
+				<p>
+					Description du projet GL
+				</p>
+			</div>	
+		</div>
 
+		<div class="gen1" id="java">
+			<div class="left_panel">
+				<h3>Logiciel de gestion pour location de véhicule - Java/Swing - Mai/Juin 2020</h3>
+				<p>
+					Description projet Java
+				</p>
+			</div>
+			<div class="right_panel">
+				<img src="img/java_logiciel_1.png">
+			</div>
+		</div>
+
+		<div class="gen2" id="microC">
+			<div class="left_panel">
+				<img src="img/microC.png">
+			</div>
+			<div class="right_panel">
+				<h3>Gestion d'inventaire embarquée sur une carte LPC1768 - C - Mars/Avril 2020</h3>
+				<p>
+					Description du projet µC
+				</p>
+			</div>	
+		</div>
+
+		<div class="gen1" id="pacman">
+			<div class="left_panel">
+				<h3>Intelligence artificielle Pacman - C - Fin 2019 à Début 2020</h3>
+				<p>
+					Description projet Pacman
+				</p>
+			</div>
+			<div class="right_panel">
+				<img src="img/pacman.png">
+			</div>
+		</div>
+
+		<div class="gen2" id="SH">
+			<div class="left_panel">
+				<img src="img/logo_cuisine.png">
+			</div>
+			<div class="right_panel">
+				<h3>Projet événementiel - Saveurs du Trégor - Pôle logistique/sécurité - Septembre 2020 à Mai 2021</h3>
+				<p>
+					Description du projet SH
+				</p>
+			</div>	
+		</div>
+	</div>
 
 	<!-- Pied de page -->
 	<footer>
